@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfólio de Joao Arthur Gomes Duarte - Desenvolvedor Full Stack & Game Dev">
+  <meta name="keywords" content="portfolio, desenvolvedor, python, django, unity, c#, jogos, visão computacional">
+  <meta name="author" content="Joao Arthur Gomes Duarte">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Joao Arthur | Desenvolvedor">
+  <meta property="og:description" content="Estudante de Ciência da Computação na CESAR School. Especializado em Django, Unity e Visão Computacional.">
+  <meta property="og:type" content="website">
+
+  <title>Joao Arthur | Desenvolvedor Full Stack & Game Dev</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-initial">JA</span>
+        <span class="logo-text">Joao Arthur</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Alternar menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Início</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#contact" class="nav-link btn-primary">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Olá, eu sou 👋</p>
+        <h1 class="hero-title">
+          Joao Arthur Gomes Duarte
+        </h1>
+        <h2 class="hero-subtitle">
+          Desenvolvedor <span class="highlight">Full Stack</span> & <span class="highlight">Game Dev</span>
+        </h2>
+        <p class="hero-description">
+          Estudante de Ciência da Computação na <strong>CESAR School</strong>.
+          Crio soluções eficientes com Python/Django no back-end, experiências
+          interativas com Unity/C# para jogos, e soluções de IA com OpenCV e YOLOv8.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-folder-open"></i> Ver Projetos
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Entrar em Contato
+          </a>
+          <a href="assets/cv/Joao_Arthur_Gomes_Duarte_Curriculo_2026.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fas fa-download"></i> Baixar CV
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://github.com/jarthur-duarte" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/arthur-duarte-380513356/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:joaoarthurdduarte@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/images/profilen.jpeg" alt="Joao Arthur - Desenvolvedor" class="profile-img">
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="fab fa-python"></i> Python
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-gamepad"></i> Unity
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <a href="#about" class="scroll-indicator" aria-label="Rolar para baixo">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-card">
+            <div class="image-placeholder large">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h3>Transformando ideias em código</h3>
+          <p>
+            Atualmente no <strong>4º período de Ciência da Computação</strong> na CESAR School,
+            em Recife. Tenho paixão por resolver problemas complexos através de código limpo
+            e soluções escaláveis.
+          </p>
+          <p>
+            Minha jornada me levou a explorar o <strong>desenvolvimento web back-end</strong>
+            com Python e Django, o <strong>desenvolvimento de jogos</strong>
+            com C# e Unity, e mais recentemente a <strong>visão computacional</strong>
+            com OpenCV e YOLOv8. Acredito na aprendizagem contínua e no impacto social da tecnologia.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projetos Concluídos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Áreas de Especialização</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Dedicação</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Habilidades & Tecnologias</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Ferramentas que domino para criar soluções de impacto</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-server"></i>
+            <h3>Back-End</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-django"></i>
+                <span>Django / DRF</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-database"></i>
+                <span>SQLite / PostgreSQL</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Dev & IA -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-gamepad"></i>
+            <h3>Game Dev & IA</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-cube"></i>
+                <span>Unity / C#</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-eye"></i>
+                <span>OpenCV / YOLOv8</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-microchip"></i>
+                <span>C / Raylib</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend & Tools -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <i class="fas fa-tools"></i>
+            <h3>Front-End & Ferramentas</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-html5"></i>
+                <span>HTML5 & CSS3</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-git-alt"></i>
+                <span>Git & GitHub</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-tasks"></i>
+                <span>Taiga / Trello / Kanban</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar" style="--width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Soluções que desenvolvi com dedicação e boas práticas</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-image">
+            <img src="assets/images/sushi.jpg" alt="Sushi Em Casa - Plataforma de Delivery" class="project-img">
+            <div class="project-overlay">
+              <div class="project-links">
+                <!-- TODO: adicionar o link real do repositório -->
+                <a href="#" target="_blank" rel="noopener" class="project-link" title="Ver Código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener" class="project-link" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-primary">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <h3 class="project-title">Sushi Em Casa</h3>
+            <p class="project-description">
+              Plataforma completa de delivery para restaurante de sushi. Sistema de
+              cardápio digital, gestão de pedidos em tempo real e integração com banco
+              de dados relacional.
+            </p>
+            <ul class="project-features">
+              <li><i class="fas fa-check"></i> Autenticação de usuários</li>
+              <li><i class="fas fa-check"></i> Carrinho de compras</li>
+              <li><i class="fas fa-check"></i> Painel administrativo</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project: Contagem de Cachos de Uva (YOLOv8) -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <!-- TODO: adicionar o link real do repositório -->
+                <a href="#" target="_blank" rel="noopener" class="project-link" title="Ver Código">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-primary">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">YOLOv8</span>
+            </div>
+            <h3 class="project-title">Contagem de Cachos de Uva</h3>
+            <p class="project-description">
+              API em Python com OpenCV e YOLOv8 para contagem automatizada de cachos
+              de uva, apoiando o monitoramento de produtividade na colheita em Petrolina.
+            </p>
+            <ul class="project-features">
+              <li><i class="fas fa-check"></i> Detecção de objetos em imagens</li>
+              <li><i class="fas fa-check"></i> API própria em Python</li>
+              <li><i class="fas fa-check"></i> Foco em produtividade agrícola</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project: Forja Games -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <!-- TODO: adicionar o link real do repositório -->
+                <a href="#" target="_blank" rel="noopener" class="project-link" title="Ver Código">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-primary">C#</span>
+              <span class="tag">Unity</span>
+              <span class="tag">Taiga</span>
+            </div>
+            <h3 class="project-title">Forja Games</h3>
+            <p class="project-description">
+              Desenvolvimento de sistemas e lógica de jogos em C# com Unity, aplicando
+              Orientação a Objetos. Gestão ágil do backlog e das sprints do time com
+              Taiga e quadros Kanban.
+            </p>
+            <ul class="project-features">
+              <li><i class="fas fa-check"></i> Lógica de jogo em C#</li>
+              <li><i class="fas fa-check"></i> Orientação a Objetos</li>
+              <li><i class="fas fa-check"></i> Gestão ágil com Taiga/Kanban</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 3: Arkanoid C -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" class="project-link" title="Ver Código">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-primary">C</span>
+              <span class="tag">Raylib</span>
+              <span class="tag">Pthreads</span>
+            </div>
+            <h3 class="project-title">Arkanoid em C</h3>
+            <p class="project-description">
+              Clone moderno do clássico Arkanoid desenvolvido em C puro, utilizando
+              a biblioteca Raylib para gráficos e threads para concorrência.
+            </p>
+            <ul class="project-features">
+              <li><i class="fas fa-check"></i> Física de colisão</li>
+              <li><i class="fas fa-check"></i> Sistema de partículas</li>
+              <li><i class="fas fa-check"></i> Gerenciamento de estado</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects-more">
+        <h4>Mais Projetos</h4>
+        <div class="projects-compact">
+          <div class="compact-item">
+            <i class="fas fa-newspaper"></i>
+            <div>
+              <strong>Jornal do Commercio REC.O</strong>
+              <p>Automação de conteúdo com integração da API Gemini (NLP) para geração de quizzes</p>
+            </div>
+          </div>
+          <div class="compact-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <div>
+              <strong>Brasilino: Inclusão Digital</strong>
+              <p>Educador de lógica de programação para neurodivergentes</p>
+            </div>
+          </div>
+          <div class="compact-item">
+            <i class="fas fa-chart-matrix"></i>
+            <div>
+              <strong>Projeto SEBRAE</strong>
+              <p>Análise de requisitos com Matriz CSD e UX Research</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/jarthur-duarte" target="_blank" rel="noopener" class="btn btn-outline">
+          Ver todos no GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experiência & Formação</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">02/2025 - Presente</span>
+            <h3 class="timeline-title">Ciência da Computação</h3>
+            <p class="timeline-org"><i class="fas fa-university"></i> CESAR School, Recife</p>
+            <p class="timeline-description">
+              Formação com foco em engenharia de software, algoritmos e desenvolvimento
+              de sistemas. Participação em projetos práticos e metodologias ágeis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025/2026</span>
+            <h3 class="timeline-title">Educador de Programação</h3>
+            <p class="timeline-org"><i class="fas fa-hands-helping"></i> Projeto Brasilino</p>
+            <p class="timeline-description">
+              Atuação como educador de lógica de programação para crianças e adolescentes
+              neurodivergentes, adaptando metodologias de ensino para inclusão digital.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026</span>
+            <h3 class="timeline-title">Projeto Consultoria</h3>
+            <p class="timeline-org"><i class="fas fa-briefcase"></i> SEBRAE</p>
+            <p class="timeline-description">
+              Análise de requisitos e levantamento de dados utilizando Matriz CSD para
+              identificar certezas, suposições e dúvidas de problemas reais de negócios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Estou aberto a oportunidades, parcerias e novos desafios</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <a href="mailto:joaoarthurdduarte@gmail.com">joaoarthurdduarte@gmail.com</a>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Localização</h4>
+            <p>Recife, Pernambuco, Brasil</p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-share-alt"></i>
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+              <a href="https://github.com/jarthur-duarte" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/arthur-duarte-380513356/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nome *</label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Sobre o que quer falar?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Sua mensagem..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+
+          <p class="form-note">
+            <i class="fas fa-info-circle"></i>
+            Ou prefere me chamar direto no <a href="https://www.linkedin.com/in/arthur-duarte-380513356/">LinkedIn</a>?
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-initial">JA</span>
+          <p>Desenvolvedor apaixonado por criar soluções que impactam positivamente.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Início</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
+          <a href="#" id="backToTop">↑ Topo</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://github.com/jarthur-duarte" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/arthur-duarte-380513356/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:joaoarthurdduarte@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="currentYear"></span> Joao Arthur Gomes Duarte.
+          Desenvolvido com <i class="fas fa-heart"></i> e código limpo.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
