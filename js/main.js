@@ -16,7 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const backToTop = document.getElementById('backToTop');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const headerHeight = () => navbar ? navbar.offsetHeight : 0;
+  const mobileQuery = window.matchMedia('(max-width: 900px)');
+  // No celular a barra fica no topo; no desktop ela é lateral e não cobre o conteúdo.
+  const headerHeight = () => {
+    if (!mobileQuery.matches || !navbar) return 0;
+    return navbar.querySelector('.sidebar-top')?.offsetHeight || navbar.offsetHeight;
+  };
 
   if (currentYearEl) {
     currentYearEl.textContent = new Date().getFullYear();
@@ -56,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Destaque do menu ---------- */
   function updateActiveLink() {
-    const scrollPosition = window.scrollY + headerHeight() + 10;
+    const scrollPosition = window.scrollY + headerHeight() + window.innerHeight * 0.3;
     let currentId = null;
 
     sections.forEach(section => {
@@ -156,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    document.querySelectorAll('.project-card, .skill-category, .timeline-item, .contact-card, .paper-card').forEach(el => {
+    document.querySelectorAll('.case, .mini, .skill-group, .tl-item, .paper, .contact-panel').forEach(el => {
       el.classList.add('reveal');
       observer.observe(el);
     });
