@@ -90,8 +90,8 @@
         <p class="hero-role mono">Python · Django · Visão Computacional · CESAR School</p>
         <p class="hero-lead">
           Estudo Ciência da Computação e desenvolvo <em>sistemas web com Python e Django</em> e soluções de
-          <em>visão computacional</em>. Do protótipo no Figma ao deploy no Azure, com testes automatizados
-          no GitHub Actions.
+          <em>visão computacional</em>. Do protótipo no Figma ao deploy, com testes automatizados
+          e CI no GitHub Actions.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary mono"><i class="fas fa-arrow-right" aria-hidden="true"></i> falar comigo</a>
@@ -132,13 +132,15 @@
         <div class="about-text">
           <p>
             No <strong>back-end</strong>, trabalho com Python, Django, Django REST Framework e PostgreSQL.
-            No Sushi Em Casa, sistema de pedidos feito para um cliente real, cuidei do deploy no Azure
-            com CI/CD no GitHub Actions, rodando testes unitários e com Selenium, a partir de protótipos no Figma.
+            No Sushi Em Casa, sistema de delivery feito para um cliente real, refiz todo o front-end
+            (design system em CSS, layout responsivo e acessibilidade), com testes em Django e Selenium rodando
+            no GitHub Actions. No Jornal do Commercio, fiz o back-end em Django com PostgreSQL e deploy no Azure.
           </p>
           <p>
             Em <strong>IA</strong>, desenvolvo uma API de visão computacional com OpenCV e YOLOv8 e já integrei
-            a API do Gemini (NLP) para gerar quizzes. Também desenvolvi <strong>jogos</strong> em Unity/C# e em C,
-            sempre em times com Scrum e Kanban, usando Taiga e Trello.
+            a API do Gemini (NLP) para gerar quizzes a partir de notícias. Também desenvolvi <strong>jogos</strong> em Unity/C#
+            e em C, sempre em times com Scrum e Kanban, usando Taiga e Trello. Em 2024 fiz intercâmbio nos EUA,
+            onde usei o inglês no dia a dia.
           </p>
         </div>
       </div>
@@ -157,7 +159,7 @@
         <!-- TODO: incluir o período do projeto (datas de início e entrega) quando o João informar. -->
         <article class="proj" aria-labelledby="proj-sushi">
           <div class="proj-media">
-            <img src="assets/images/sushi-1200.jpg" alt="Tela do cardápio do Sushi Em Casa" width="1200" height="640" loading="lazy">
+            <img src="assets/images/sushi-1200.jpg" alt="Cardápio do Sushi Em Casa com os sushis, preços e botões de adicionar" width="1200" height="675" loading="lazy">
           </div>
           <div class="proj-body">
             <div class="proj-top">
@@ -165,14 +167,17 @@
               <span class="tag tag-ok mono">cliente real</span>
             </div>
             <p>
-              Sistema web de pedidos desenvolvido para um cliente real, com deploy no Azure Web App e
-              CI/CD no GitHub Actions rodando testes unitários e com Selenium.
+              Aplicação de delivery feita para um cliente real: cardápio, carrinho, pedidos com acompanhamento
+              de status, painel da administradora e finalização do pedido pelo WhatsApp.
             </p>
             <dl class="meta">
-              <div><dt class="mono">stack</dt><dd>Python, Django, PostgreSQL, Azure, GitHub Actions, Selenium, Figma</dd></div>
-              <div><dt class="mono">funções</dt><dd>Cardápio, carrinho, pedidos, contato e área administrativa</dd></div>
+              <div><dt class="mono">stack</dt><dd>Python, Django, HTML/CSS/JS, PostgreSQL, Selenium, GitHub Actions, Figma, Vercel</dd></div>
+              <div><dt class="mono">destaques</dt><dd>Redesign completo do front-end (design system em CSS, layout responsivo, acessibilidade), deploy na Vercel com Postgres e testes (Django e Selenium) em CI no GitHub Actions</dd></div>
             </dl>
             <div class="proj-links">
+              <a href="https://sushiemcasa.vercel.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary mono">
+                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> ver site <span class="sr-only">do Sushi Em Casa (abre em nova aba)</span>
+              </a>
               <a href="https://github.com/jarthur-duarte/SushiEmCasa" target="_blank" rel="noopener" class="btn btn-sm mono">
                 <i class="fab fa-github" aria-hidden="true"></i> código <span class="sr-only">do Sushi Em Casa (abre em nova aba)</span>
               </a>
@@ -266,8 +271,8 @@
           </div>
           <div class="mini-body">
             <h4 id="proj-forja">Forja Games</h4>
-            <p>Sistemas e lógica de jogos em C# com Unity, com Orientação a Objetos, em equipe Scrum. Backlog e sprints no Taiga e em quadros Kanban.</p>
-            <p class="stack mono">c# · unity · scrum · taiga</p>
+            <p>Jogo em Unity com C# e Orientação a Objetos, desenvolvido em equipe Scrum, com tarefas no Taiga e em quadros Kanban.</p>
+            <p class="stack mono">c# · unity · poo · scrum · taiga · 10/2025 – 12/2025</p>
             <a href="https://github.com/FORJAGame" target="_blank" rel="noopener" class="text-link mono">
               código <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="sr-only"> da Forja Games (abre em nova aba)</span>
             </a>
@@ -293,7 +298,7 @@
       <ul class="rows">
         <li class="row">
           <span class="row-title">Jornal do Commercio REC.O</span>
-          <span class="row-desc">Automação de conteúdo com a API do Gemini (NLP) para gerar quizzes</span>
+          <span class="row-desc">Back-end em Django (MVT) com PostgreSQL e deploy no Azure; quizzes gerados a partir de notícias com a API do Gemini (NLP) · 02/2025 – 10/2025</span>
           <span class="row-tag mono">ia</span>
         </li>
         <li class="row">
@@ -321,28 +326,28 @@
       </header>
       <div class="skills">
         <div class="skill-group">
-          <h3 class="mono">back-end &amp; dados</h3>
-          <ul class="chips"><li>Python</li><li>Django</li><li>Django REST Framework</li><li>PostgreSQL</li><li>SQLite</li></ul>
+          <h3 class="mono">linguagens</h3>
+          <ul class="chips"><li>Python</li><li>C#</li><li>C</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
         </div>
         <div class="skill-group">
-          <h3 class="mono">cloud, ci/cd &amp; testes</h3>
-          <ul class="chips"><li>Azure Web App</li><li>GitHub Actions</li><li>Selenium</li><li>Testes unitários</li><li>Git &amp; GitHub</li></ul>
+          <h3 class="mono">back-end &amp; dados</h3>
+          <ul class="chips"><li>Django</li><li>Django REST Framework</li><li>PostgreSQL</li><li>SQLite</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">cloud, ci &amp; testes</h3>
+          <ul class="chips"><li>Azure</li><li>Vercel</li><li>GitHub Actions</li><li>Selenium</li><li>Testes unitários</li><li>Git &amp; GitHub</li></ul>
         </div>
         <div class="skill-group">
           <h3 class="mono">ia &amp; visão computacional</h3>
           <ul class="chips"><li>OpenCV</li><li>YOLOv8</li><li>Gemini API (NLP)</li></ul>
         </div>
         <div class="skill-group">
-          <h3 class="mono">jogos</h3>
-          <ul class="chips"><li>Unity</li><li>C#</li><li>C / Raylib</li></ul>
+          <h3 class="mono">jogos &amp; design</h3>
+          <ul class="chips"><li>Unity</li><li>Raylib</li><li>Figma</li></ul>
         </div>
         <div class="skill-group">
-          <h3 class="mono">front-end &amp; design</h3>
-          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Figma</li></ul>
-        </div>
-        <div class="skill-group">
-          <h3 class="mono">gestão ágil</h3>
-          <ul class="chips"><li>Scrum</li><li>Kanban</li><li>Taiga</li><li>Trello</li></ul>
+          <h3 class="mono">métodos &amp; idiomas</h3>
+          <ul class="chips"><li>Scrum</li><li>Kanban</li><li>POO</li><li>Design Patterns</li><li>Taiga</li><li>Trello</li><li>Inglês (vivência nos EUA)</li></ul>
         </div>
       </div>
     </section>
@@ -399,6 +404,21 @@
             <h3>Projeto Consultoria</h3>
             <p class="log-org mono">SEBRAE</p>
             <p>Análise de requisitos e levantamento de dados com Matriz CSD para identificar certezas, suposições e dúvidas de problemas reais de negócios.</p>
+          </div>
+        </li>
+        <li class="log-item">
+          <span class="log-date mono">08/2025 – 10/2025</span>
+          <div>
+            <h3>Extensão em Robótica</h3>
+            <p class="log-org mono">Formação complementar</p>
+          </div>
+        </li>
+        <li class="log-item">
+          <span class="log-date mono">08/2024 – 11/2024</span>
+          <div>
+            <h3>Intercâmbio nos EUA</h3>
+            <p class="log-org mono">Brockton, Massachusetts</p>
+            <p>Trabalhei como garçom, babá e em paisagismo, usando o inglês no dia a dia.</p>
           </div>
         </li>
       </ol>
