@@ -16,12 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const backToTop = document.getElementById('backToTop');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const mobileQuery = window.matchMedia('(max-width: 900px)');
-  // No celular a barra fica no topo; no desktop ela é lateral e não cobre o conteúdo.
-  const headerHeight = () => {
-    if (!mobileQuery.matches || !navbar) return 0;
-    return navbar.querySelector('.sidebar-top')?.offsetHeight || navbar.offsetHeight;
-  };
+  // A barra fica fixa no topo em todas as telas.
+  const headerHeight = () => navbar ? navbar.offsetHeight : 0;
 
   if (currentYearEl) {
     currentYearEl.textContent = new Date().getFullYear();
@@ -61,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Destaque do menu ---------- */
   function updateActiveLink() {
-    const scrollPosition = window.scrollY + headerHeight() + window.innerHeight * 0.3;
+    const scrollPosition = window.scrollY + headerHeight() + window.innerHeight * 0.35;
     let currentId = null;
 
     sections.forEach(section => {
@@ -161,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    document.querySelectorAll('.case, .mini, .skill-group, .tl-item, .paper, .contact-panel').forEach(el => {
+    document.querySelectorAll('.proj, .mini, .skill-group, .log-item, .paper, .rows').forEach(el => {
       el.classList.add('reveal');
       observer.observe(el);
     });
